@@ -1,0 +1,1118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5F3489">
+  <meta name="description" content="Discover bridal henna, personal mehndi, private appointments and event henna by Henna Art by Sadia Amjid in Dubai. Enquire about your booking.">
+  <title>Henna Art by Sadia Amjid | Elegant Henna in Dubai</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #5F3489;
+      --primary-dark: #43245F;
+      --primary-light: #EDE4F3;
+      --secondary: #4A4642;
+      --secondary-dark: #302C29;
+      --secondary-light: #EAE6E2;
+      --accent: #C49A52;
+      --heading: #261C2B;
+      --body: #4A4642;
+      --muted: #756D76;
+      --background: #FBF8F4;
+      --background-alt: #F7F0F6;
+      --surface: #FFFFFF;
+      --border: #E4DCE6;
+      --shadow: 0 18px 55px rgba(48, 30, 55, .09);
+      --radius: 20px;
+      --font-heading: "Cormorant Garamond", Georgia, serif;
+      --font-body: "DM Sans", Arial, sans-serif;
+      --container: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      color: var(--body);
+      background: var(--background);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(var(--container), calc(100% - 48px)); margin-inline: auto; }
+    .section { padding: 100px 0; }
+    .section-soft { background: var(--background-alt); }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 16px;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 27px;
+      height: 1px;
+      background: var(--accent);
+    }
+    h1, h2, h3, h4 {
+      margin: 0;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      line-height: 1.04;
+    }
+    h1 { font-size: clamp(48px, 6.5vw, 78px); }
+    h2 { font-size: clamp(39px, 4.6vw, 58px); }
+    h3 { font-size: 31px; }
+    h4 { font-size: 24px; }
+    p { margin: 0 0 18px; }
+    .section-intro { max-width: 660px; margin-bottom: 48px; }
+    .section-intro p { margin-top: 18px; color: var(--muted); font-size: 17px; }
+    .text-center { text-align: center; }
+    .text-center .section-intro { margin-inline: auto; }
+    .text-center .eyebrow { justify-content: center; }
+    .btn {
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 24px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s ease, color .2s ease, transform .2s ease, border-color .2s ease;
+    }
+    .btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+    .btn-outline { border-color: var(--primary); background: transparent; color: var(--primary); }
+    .btn-outline:hover { background: var(--primary); color: white; }
+    .btn-light { background: white; color: var(--primary); }
+    .btn-light:hover { background: var(--primary-light); color: var(--primary-dark); }
+    .btn svg { width: 17px; height: 17px; }
+    .small-note { color: var(--muted); font-size: 14px; }
+
+    /* Header */
+    .topbar {
+      padding: 9px 0;
+      background: var(--secondary-dark);
+      color: rgba(255,255,255,.9);
+      font-size: 13px;
+    }
+    .topbar-inner { display: flex; justify-content: space-between; gap: 20px; }
+    .topbar a:hover { color: #E9C98F; }
+    .topbar-contact { display: flex; flex-wrap: wrap; gap: 22px; }
+    .site-header {
+      position: sticky;
+      z-index: 100;
+      top: 0;
+      background: rgba(251,248,244,.96);
+      border-bottom: 1px solid rgba(228,220,230,.8);
+      backdrop-filter: blur(14px);
+    }
+    .nav-wrap { display: flex; min-height: 82px; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 190px; }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      color: var(--primary);
+      font-family: var(--font-heading);
+      font-size: 27px;
+      line-height: 1;
+    }
+    .brand-name { display: flex; flex-direction: column; color: var(--heading); line-height: 1.15; }
+    .brand-name strong { font-family: var(--font-heading); font-size: 21px; font-weight: 700; }
+    .brand-name span { margin-top: 4px; color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .main-nav { display: flex; align-items: center; gap: clamp(14px, 2vw, 26px); }
+    .main-nav a { color: var(--secondary); font-size: 13px; font-weight: 600; transition: color .2s; }
+    .main-nav a:hover { color: var(--primary); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .nav-actions .btn { min-height: 44px; padding: 10px 19px; font-size: 13px; }
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: white;
+      color: var(--primary);
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero { position: relative; overflow: hidden; padding: 76px 0 84px; }
+    .hero::before {
+      position: absolute;
+      top: -180px;
+      right: -170px;
+      width: 530px;
+      height: 530px;
+      border: 1px solid rgba(196,154,82,.25);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1fr .92fr; align-items: center; gap: 70px; }
+    .hero-copy { position: relative; z-index: 1; }
+    .hero h1 span { color: var(--primary); font-style: italic; }
+    .hero-copy > p { max-width: 540px; margin: 25px 0 30px; color: var(--muted); font-size: 18px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; }
+    .hero-trust { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 38px; }
+    .trust-item { display: flex; align-items: center; gap: 9px; color: var(--secondary); font-size: 13px; font-weight: 600; }
+    .trust-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    .hero-visual { position: relative; min-height: 550px; }
+    .hero-photo {
+      position: absolute;
+      inset: 0 22px 20px 35px;
+      overflow: hidden;
+      border-radius: 48% 48% 18px 18px;
+      background: #e8d9e8;
+      box-shadow: var(--shadow);
+    }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-photo::after {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 65%, rgba(38,28,43,.25));
+      content: "";
+    }
+    .hero-caption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      max-width: 230px;
+      padding: 20px 23px;
+      border: 1px solid rgba(255,255,255,.75);
+      border-radius: 14px;
+      background: rgba(255,255,255,.94);
+      box-shadow: var(--shadow);
+    }
+    .hero-caption strong { display: block; color: var(--primary); font-family: var(--font-heading); font-size: 25px; line-height: 1.1; }
+    .hero-caption span { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; }
+
+    /* Intro strip */
+    .intro-strip { padding: 25px 0; border-block: 1px solid var(--border); background: white; }
+    .intro-strip-inner { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px 52px; }
+    .intro-strip span { color: var(--secondary); font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .intro-strip span::before { margin-right: 10px; color: var(--accent); content: "✦"; }
+
+    /* Services */
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .service-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .service-image { height: 230px; overflow: hidden; background: var(--primary-light); }
+    .service-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+    .service-card:hover .service-image img { transform: scale(1.05); }
+    .service-content { padding: 25px; }
+    .service-content h3 { margin-bottom: 11px; font-size: 29px; }
+    .service-content p { min-height: 78px; color: var(--muted); font-size: 14px; }
+    .text-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); font-size: 14px; font-weight: 700; }
+    .text-link:hover { color: var(--primary-dark); }
+    .text-link span { transition: transform .2s; }
+    .text-link:hover span { transform: translateX(4px); }
+
+    /* Six-icon feature area: exactly two rows of three */
+    .features-wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); border-radius: var(--radius); background: white; overflow: hidden; }
+    .feature {
+      min-height: 215px;
+      padding: 32px 28px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .feature:nth-child(3n) { border-right: 0; }
+    .feature:nth-child(n+4) { border-bottom: 0; }
+    .feature-icon {
+      display: grid;
+      width: 54px;
+      height: 54px;
+      margin-bottom: 21px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+    .feature-icon svg { width: 27px; height: 27px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .feature h3 { margin-bottom: 9px; font-size: 25px; }
+    .feature p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* About */
+    .about-grid { display: grid; grid-template-columns: .95fr 1fr; align-items: center; gap: 76px; }
+    .about-visual { position: relative; min-height: 520px; }
+    .about-main-image { position: absolute; inset: 0 50px 38px 0; overflow: hidden; border-radius: 18px 150px 18px 18px; background: var(--primary-light); }
+    .about-main-image img { width: 100%; height: 100%; object-fit: cover; }
+    .about-detail-image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 42%;
+      height: 42%;
+      overflow: hidden;
+      border: 8px solid var(--background);
+      border-radius: 16px;
+      background: var(--secondary-light);
+    }
+    .about-detail-image img { width: 100%; height: 100%; object-fit: cover; }
+    .about-copy > p { margin-top: 22px; color: var(--muted); }
+    .about-points { display: grid; gap: 13px; margin: 26px 0 30px; }
+    .about-point { display: flex; align-items: flex-start; gap: 12px; color: var(--secondary); font-size: 15px; }
+    .about-point span { display: grid; width: 22px; height: 22px; flex: 0 0 22px; place-items: center; border-radius: 50%; background: var(--primary-light); color: var(--primary); font-size: 12px; font-weight: 700; }
+
+    /* Gallery */
+    .gallery-grid { display: grid; grid-template-columns: 1.1fr .9fr .9fr; grid-template-rows: 230px 230px; gap: 16px; }
+    .gallery-item { overflow: hidden; border-radius: 15px; background: var(--primary-light); }
+    .gallery-item:first-child { grid-row: span 2; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-note { margin-top: 20px; color: var(--muted); font-size: 13px; text-align: center; }
+
+    /* Booking steps */
+    .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+    .step { padding: 30px; border: 1px solid var(--border); border-radius: var(--radius); background: white; }
+    .step-number { display: grid; width: 42px; height: 42px; margin-bottom: 22px; place-items: center; border-radius: 50%; background: var(--primary); color: white; font-family: var(--font-heading); font-size: 22px; }
+    .step h3 { margin-bottom: 10px; font-size: 27px; }
+    .step p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* CTA band */
+    .cta-band { position: relative; overflow: hidden; padding: 75px 0; background: var(--primary-dark); color: white; }
+    .cta-band::after {
+      position: absolute;
+      top: -130px;
+      right: -70px;
+      width: 360px;
+      height: 360px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+      content: "";
+    }
+    .cta-band-inner { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 35px; }
+    .cta-band h2 { max-width: 650px; color: white; font-size: clamp(38px, 4.5vw, 55px); }
+    .cta-band p { margin: 13px 0 0; color: rgba(255,255,255,.76); }
+    .cta-band .btn { flex: 0 0 auto; }
+
+    /* FAQ */
+    .faq-wrap { max-width: 850px; margin-inline: auto; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 23px 0;
+      border: 0;
+      background: transparent;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      font-size: 25px;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+    }
+    .faq-question span:last-child { color: var(--primary); font-family: var(--font-body); font-size: 22px; }
+    .faq-answer { display: none; max-width: 720px; padding: 0 35px 20px 0; color: var(--muted); font-size: 15px; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-question span:last-child { transform: rotate(45deg); }
+
+    /* Booking form */
+    .booking-section { background: var(--background-alt); }
+    .booking-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 65px; align-items: start; }
+    .booking-copy { position: sticky; top: 125px; }
+    .booking-copy > p { margin-top: 20px; color: var(--muted); }
+    .contact-details { display: grid; gap: 17px; margin-top: 30px; }
+    .contact-row { display: flex; align-items: flex-start; gap: 13px; }
+    .contact-symbol { display: grid; width: 38px; height: 38px; flex: 0 0 38px; place-items: center; border-radius: 50%; background: white; color: var(--primary); }
+    .contact-row small { display: block; color: var(--muted); font-size: 12px; }
+    .contact-row strong, .contact-row a { color: var(--heading); font-size: 14px; font-weight: 700; overflow-wrap: anywhere; }
+    .booking-form { padding: 36px; border: 1px solid var(--border); border-radius: 22px; background: white; box-shadow: var(--shadow); }
+    .booking-form h3 { margin-bottom: 8px; font-size: 34px; }
+    .booking-form > p { margin-bottom: 26px; color: var(--muted); font-size: 14px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .field { display: flex; flex-direction: column; gap: 7px; }
+    .field-full { grid-column: 1 / -1; }
+    .field label { color: var(--secondary); font-size: 13px; font-weight: 700; }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      min-height: 49px;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      outline: none;
+      background: #FFFEFD;
+      color: var(--heading);
+      font-size: 14px;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .field textarea { min-height: 110px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(95,52,137,.1);
+    }
+    .form-submit { width: 100%; margin-top: 22px; }
+    .form-disclaimer { margin: 13px 0 0; color: var(--muted); font-size: 12px; }
+
+    /* Footer */
+    .site-footer { padding: 65px 0 25px; background: var(--secondary-dark); color: rgba(255,255,255,.76); }
+    .footer-grid { display: grid; grid-template-columns: 1.35fr .8fr .9fr; gap: 60px; padding-bottom: 48px; }
+    .footer-brand .brand-name strong { color: white; }
+    .footer-brand .brand-name span { color: rgba(255,255,255,.58); }
+    .footer-brand .brand-mark { border-color: var(--accent); color: white; }
+    .footer-brand p { max-width: 340px; margin-top: 22px; color: rgba(255,255,255,.65); font-size: 14px; }
+    .footer-col h4 { margin-bottom: 20px; color: white; font-family: var(--font-body); font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .footer-links { display: grid; gap: 11px; }
+    .footer-links a { color: rgba(255,255,255,.68); font-size: 14px; }
+    .footer-links a:hover { color: white; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.55); font-size: 12px; }
+    .footer-social { display: flex; gap: 16px; }
+
+    /* Mobile fixed action bar: exactly two buttons */
+    .mobile-cta { display: none; }
+
+    @media (max-width: 1050px) {
+      .main-nav { gap: 13px; }
+      .main-nav a { font-size: 12px; }
+      .nav-actions .btn { padding-inline: 15px; }
+      .hero-grid { gap: 35px; }
+      .hero-visual { min-height: 480px; }
+      .about-grid { gap: 45px; }
+    }
+    @media (max-width: 820px) {
+      .section { padding: 78px 0; }
+      .topbar-inner { justify-content: center; }
+      .topbar-inner > span { display: none; }
+      .nav-wrap { min-height: 72px; }
+      .menu-toggle { display: grid; place-items: center; }
+      .nav-actions { margin-left: auto; }
+      .nav-actions .btn { display: none; }
+      .main-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 24px 20px;
+        border-bottom: 1px solid var(--border);
+        background: var(--background);
+        box-shadow: 0 15px 20px rgba(38,28,43,.07);
+      }
+      .main-nav.active { display: flex; flex-direction: column; }
+      .main-nav a { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+      .hero { padding: 55px 0 65px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 38px; }
+      .hero-copy { max-width: 650px; }
+      .hero-visual { min-height: 500px; max-width: 600px; width: 100%; margin-inline: auto; }
+      .service-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid, .booking-grid { grid-template-columns: 1fr; gap: 45px; }
+      .about-visual { min-height: 490px; max-width: 600px; width: 100%; }
+      .booking-copy { position: static; }
+      .cta-band-inner { align-items: flex-start; flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 38px; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 560px) {
+      body { padding-bottom: 76px; }
+      .container { width: min(100% - 36px, var(--container)); }
+      .section { padding: 65px 0; }
+      .topbar { font-size: 12px; }
+      .topbar-contact { justify-content: center; gap: 8px 16px; }
+      .brand { min-width: 0; gap: 9px; }
+      .brand-mark { width: 39px; height: 39px; font-size: 23px; }
+      .brand-name strong { font-size: 18px; }
+      .brand-name span { font-size: 8px; }
+      .nav-wrap { gap: 10px; }
+      .hero { padding-top: 43px; }
+      .hero h1 { font-size: clamp(45px, 13vw, 60px); }
+      .hero-copy > p { font-size: 16px; }
+      .hero-actions { display: grid; grid-template-columns: 1fr; }
+      .hero-actions .btn { width: 100%; }
+      .hero-trust { gap: 12px 18px; margin-top: 26px; }
+      .trust-item { font-size: 12px; }
+      .hero-visual { min-height: 390px; }
+      .hero-photo { inset: 0 14px 16px 14px; }
+      .hero-caption { max-width: 190px; padding: 15px; }
+      .hero-caption strong { font-size: 21px; }
+      .intro-strip-inner { gap: 12px 20px; }
+      .intro-strip span { font-size: 10px; }
+      .section-intro { margin-bottom: 32px; }
+      .section-intro p { font-size: 15px; }
+      .service-grid { grid-template-columns: 1fr; gap: 17px; }
+      .service-image { height: 235px; }
+      .service-content p { min-height: 0; }
+      .features-wrap { grid-template-columns: 1fr 1fr; }
+      .feature { min-height: 205px; padding: 22px 17px; border-right: 1px solid var(--border) !important; border-bottom: 1px solid var(--border) !important; }
+      .feature:nth-child(2n) { border-right: 0 !important; }
+      .feature:nth-child(n+5) { border-bottom: 0 !important; }
+      .feature-icon { width: 47px; height: 47px; margin-bottom: 15px; }
+      .feature h3 { font-size: 22px; }
+      .feature p { font-size: 13px; }
+      .about-visual { min-height: 390px; }
+      .about-main-image { inset: 0 35px 28px 0; }
+      .about-detail-image { width: 43%; height: 40%; border-width: 6px; }
+      .about-copy > p { font-size: 15px; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 210px 160px 160px; gap: 10px; }
+      .gallery-item:first-child { grid-column: 1 / -1; grid-row: auto; }
+      .steps-grid { grid-template-columns: 1fr; gap: 14px; }
+      .step { padding: 24px; }
+      .cta-band { padding: 58px 0; }
+      .cta-band h2 { font-size: 39px; }
+      .faq-question { font-size: 22px; }
+      .booking-form { padding: 24px 18px; }
+      .booking-form h3 { font-size: 30px; }
+      .form-grid { grid-template-columns: 1fr; gap: 14px; }
+      .field-full { grid-column: auto; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px 20px; }
+      .footer-bottom { flex-direction: column; }
+      .mobile-cta {
+        position: fixed;
+        z-index: 200;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+        border-top: 1px solid var(--border);
+        background: rgba(255,255,255,.97);
+        box-shadow: 0 -8px 25px rgba(38,28,43,.08);
+        backdrop-filter: blur(12px);
+      }
+      .mobile-cta .btn { min-height: 48px; padding: 10px 12px; font-size: 13px; }
+      .mobile-cta .btn-outline { background: white; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-contact">
+        <a href="tel:+971508515054">+971 50 851 5054</a>
+        <a href="mailto:hennaartbysadiaamjid@gmail.com">hennaartbysadiaamjid@gmail.com</a>
+      </div>
+      <span>Henna artistry for your meaningful moments</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Henna Art by Sadia Amjid home">
+        <span class="brand-mark">S</span>
+        <span class="brand-name">
+          <strong>Henna Art</strong>
+          <span>by Sadia Amjid</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#about">Our Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#experience">How It Works</a>
+        <a href="#faq">FAQs</a>
+        <a href="#booking">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn" href="#booking">Enquire Now</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Henna artistry · Dubai, UAE</p>
+          <h1>Every design tells <span>your story.</span></h1>
+          <p>
+            Celebrate your moments with thoughtfully created henna artistry.
+            From bridal details to joyful gatherings, discover designs that
+            bring tradition and personal expression together.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#booking">Plan Your Henna Experience
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-outline" href="#gallery">Explore the Gallery</a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item"><span class="trust-dot"></span>Bridal & occasion henna</div>
+            <div class="trust-item"><span class="trust-dot"></span>Private appointments</div>
+            <div class="trust-item"><span class="trust-dot"></span>Event experiences</div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <img
+              src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1100&q=85"
+              alt="Elegant close-up beauty detail"
+              fetchpriority="high"
+              onerror="this.style.display='none'; this.parentElement.style.background='#EDE4F3';"
+            >
+          </div>
+          <div class="hero-caption">
+            <strong>Art with meaning</strong>
+            <span>Personalised henna for life's special occasions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="intro-strip">
+      <div class="container intro-strip-inner">
+        <span>Bridal celebrations</span>
+        <span>Private appointments</span>
+        <span>Parties & events</span>
+        <span>Corporate gatherings</span>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-intro">
+          <p class="eyebrow">Explore our services</p>
+          <h2>Henna for every kind of occasion.</h2>
+          <p>
+            Whether you're preparing for a wedding, planning a celebration or
+            looking for a personal design, find the experience that suits your moment.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Wedding celebration setting" loading="lazy">
+            </div>
+            <div class="service-content">
+              <h3>Bridal Henna</h3>
+              <p>Personalised bridal designs for weddings and pre-wedding celebrations, with styles inspired by your preferences and traditions.</p>
+              <a class="text-link" href="#booking">Enquire about bridal henna <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Elegant event celebration" loading="lazy">
+            </div>
+            <div class="service-content">
+              <h3>Parties & Events</h3>
+              <p>Henna experiences for birthdays, family gatherings, baby showers, maternity celebrations and special occasions.</p>
+              <a class="text-link" href="#booking">Plan an event <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80" alt="People collaborating at an event" loading="lazy">
+            </div>
+            <div class="service-content">
+              <h3>Corporate Henna</h3>
+              <p>A creative activity for brand events, team occasions, guest experiences and corporate celebrations.</p>
+              <a class="text-link" href="#booking">Discuss corporate bookings <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Personal style and fashion inspiration" loading="lazy">
+            </div>
+            <div class="service-content">
+              <h3>Personal Henna</h3>
+              <p>Individual henna appointments for anyone who wants a distinctive design for a celebration or simply for themselves.</p>
+              <a class="text-link" href="#booking">Arrange an appointment <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=900&q=80" alt="Decorative celebration details" loading="lazy">
+            </div>
+            <div class="service-content">
+              <h3>Henna Styles & Finishes</h3>
+              <p>Explore traditional brown henna alongside options such as white, gold, glitter and Jagua-style designs.</p>
+              <a class="text-link" href="#booking">Find your preferred style <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80" alt="Creative art materials and workspace" loading="lazy">
+            </div>
+            <div class="service-content">
+              <h3>Classes & Henna Shop</h3>
+              <p>Interested in learning or exploring henna products? Get in touch to ask about available classes and shop options.</p>
+              <a class="text-link" href="#booking">Ask about availability <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-intro text-center">
+          <p class="eyebrow">The experience</p>
+          <h2>Thoughtful artistry, from first idea to final detail.</h2>
+          <p>Every occasion is different. The experience begins with understanding what matters to you.</p>
+        </div>
+
+        <div class="features-wrap">
+          <article class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l2.8 7.2L26 14l-7.2 2.8L16 24l-2.8-7.2L6 14l7.2-2.8L16 4Z"/><path d="M25 22l1.2 3.1L29 26l-2.8 1-1.2 3-1.2-3-2.8-1 2.8-.9L25 22Z"/></svg>
+            </div>
+            <h3>Personalised Designs</h3>
+            <p>Discuss the look, style and level of detail that feels right for your occasion.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27s-10-6-10-14a5.5 5.5 0 0 1 10-3 5.5 5.5 0 0 1 10 3c0 8-10 14-10 14Z"/><path d="M11 15c2 1 3 2 4 4 1-3 3-5 6-6"/></svg>
+            </div>
+            <h3>Occasion-led Care</h3>
+            <p>From intimate appointments to larger celebrations, plan around your event needs.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26V12l10-7 10 7v14H6Z"/><path d="M12 26v-8h8v8M11 13h.01M21 13h.01"/></svg>
+            </div>
+            <h3>Home Service Enquiries</h3>
+            <p>Ask about arranging a henna appointment at your home or chosen venue.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 9v7l5 3M8 5 5 8M24 5l3 3"/></svg>
+            </div>
+            <h3>Planned Around You</h3>
+            <p>Share your date and timing early so the appointment can be discussed clearly.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 27 9v7c0 6-4.5 10-11 13C9.5 26 5 22 5 16V9l11-5Z"/><path d="m11 16 3.2 3.2L21 12"/></svg>
+            </div>
+            <h3>Product Choices</h3>
+            <p>Ask about the available henna types and finishes before confirming your preference.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 25 22 8l4 4L9 29H5v-4Z"/><path d="m19 11 4 4M7 8l1.5 3.5L12 13l-3.5 1.5L7 18l-1.5-3.5L2 13l3.5-1.5L7 8Z"/></svg>
+            </div>
+            <h3>Creative Expression</h3>
+            <p>Explore different design influences, from classic patterns to contemporary details.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-main-image">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1000&q=85" alt="Beauty artistry and creative preparation" loading="lazy">
+          </div>
+          <div class="about-detail-image">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80" alt="Elegant beauty detail" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow">Meet the artist</p>
+          <h2>Rooted in tradition. Made personal.</h2>
+          <p>
+            Henna Art by Sadia Amjid brings together traditional mehndi influences
+            and contemporary body-art expression. Based in Dubai, the business
+            offers henna experiences for bridal occasions, private appointments
+            and celebrations.
+          </p>
+          <p>
+            From Arabic and Emirati-inspired designs to Indian, Pakistani,
+            Moroccan and Sudanese influences, the aim is to help each client
+            find a style that feels meaningful to them.
+          </p>
+          <div class="about-points">
+            <div class="about-point"><span>✓</span> Bridal, personal and event henna enquiries</div>
+            <div class="about-point"><span>✓</span> A range of traditional and decorative henna styles</div>
+            <div class="about-point"><span>✓</span> Dubai-based appointments and home-service enquiries</div>
+          </div>
+          <a class="btn" href="#booking">Speak About Your Occasion</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="gallery">
+      <div class="container">
+        <div class="section-intro text-center">
+          <p class="eyebrow">A little inspiration</p>
+          <h2>Details worth celebrating.</h2>
+          <p>Explore the kind of visual direction and occasion styling that can inspire your own henna experience.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" alt="Wedding celebration inspiration" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Special event details" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80" alt="Fashion and style inspiration" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80" alt="Artistic creative inspiration" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Beauty and artistry inspiration" loading="lazy">
+          </div>
+        </div>
+        <p class="gallery-note">Illustrative imagery. Replace with verified Henna Art by Sadia Amjid portfolio photographs before publishing.</p>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-intro text-center">
+          <p class="eyebrow">A simple booking journey</p>
+          <h2>Let's plan your henna experience.</h2>
+          <p>Share a few details and the team can follow up to discuss your requirements and availability.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step">
+            <div class="step-number">01</div>
+            <h3>Tell us your plans</h3>
+            <p>Choose your occasion, preferred date, location and approximate number of guests.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">02</div>
+            <h3>Discuss your design</h3>
+            <p>Share your preferred style, henna type and any details that will help shape the experience.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">03</div>
+            <h3>Confirm the details</h3>
+            <p>Availability, service arrangements and pricing can be discussed before your booking is confirmed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <p class="eyebrow" style="color:#E9C98F">Your occasion, your design</p>
+          <h2>Make your next celebration a little more personal.</h2>
+          <p>Tell us what you're planning and let's start with your ideas.</p>
+        </div>
+        <a class="btn btn-light" href="#booking">Start Your Enquiry
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-intro text-center">
+          <p class="eyebrow">Helpful information</p>
+          <h2>Frequently asked questions.</h2>
+          <p>Some useful starting points before you enquire about your appointment or event.</p>
+        </div>
+
+        <div class="faq-wrap">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>What types of henna services are available?</span><span>+</span></button>
+            <div class="faq-answer">Services listed by the business include bridal henna, personal appointments, parties, corporate events, maternity and baby-shower henna, body art and decorative henna options. Contact the team to confirm the service that best fits your plans.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Can I request henna at my home or venue?</span><span>+</span></button>
+            <div class="faq-answer">The business advertises home-service enquiries. Share your location and event details so the team can confirm whether your requested arrangement is available.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Which henna styles and colours can I ask about?</span><span>+</span></button>
+            <div class="faq-answer">The business lists brown natural henna, Jagua or black henna, white henna, gold and glitter options. Availability and suitability should be confirmed directly before booking.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>How early should I make an enquiry?</span><span>+</span></button>
+            <div class="faq-answer">For weddings and larger events, it is sensible to enquire as early as possible. Share your date, location and approximate guest count so availability can be discussed.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>How do I find out about pricing?</span><span>+</span></button>
+            <div class="faq-answer">Pricing may depend on the type of service, design, location, duration and number of guests. Include these details in your enquiry to request the relevant information.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <p class="eyebrow">Let's talk about your event</p>
+          <h2>Start with a few details.</h2>
+          <p>
+            Tell us what you're planning. Include your date, location and the
+            type of henna experience you're interested in. You can also contact
+            the business directly by phone or email.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-row">
+              <span class="contact-symbol">☎</span>
+              <div><small>Call us</small><a href="tel:+971508515054">+971 50 851 5054</a></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-symbol">✉</span>
+              <div><small>Email</small><a href="mailto:hennaartbysadiaamjid@gmail.com">hennaartbysadiaamjid@gmail.com</a></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-symbol">⌖</span>
+              <div><small>Based in</small><strong>Dubai Marina, Dubai, UAE</strong></div>
+            </div>
+          </div>
+          <p class="small-note" style="margin-top:25px;">Service coverage and appointment availability are confirmed individually.</p>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+          <h3>Enquiry form</h3>
+          <p>Complete the details below to prepare an email enquiry.</p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="fullName">Your name *</label>
+              <input id="fullName" name="name" type="text" placeholder="Full name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address *</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number *</label>
+              <input id="phone" name="phone" type="tel" placeholder="+971 ..." autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="eventType">Type of occasion *</label>
+              <select id="eventType" name="event" required>
+                <option value="">Select an occasion</option>
+                <option>Bridal / Wedding</option>
+                <option>Party / Celebration</option>
+                <option>Corporate Event</option>
+                <option>Maternity / Baby Shower</option>
+                <option>Personal Appointment</option>
+                <option>Classes / Henna Products</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="eventDate">Preferred date</label>
+              <input id="eventDate" name="date" type="date">
+            </div>
+            <div class="field">
+              <label for="guestCount">Number of guests</label>
+              <select id="guestCount" name="guests">
+                <option value="">Select guest count</option>
+                <option>1 person</option>
+                <option>2–5 people</option>
+                <option>6–10 people</option>
+                <option>11–20 people</option>
+                <option>21–50 people</option>
+                <option>More than 50</option>
+              </select>
+            </div>
+            <div class="field field-full">
+              <label for="location">Event location</label>
+              <input id="location" name="location" type="text" placeholder="Area, venue or city">
+            </div>
+            <div class="field field-full">
+              <label for="style">Preferred henna style or service</label>
+              <input id="style" name="style" type="text" placeholder="e.g. bridal, Arabic, traditional brown, white henna">
+            </div>
+            <div class="field field-full">
+              <label for="message">Tell us a little more</label>
+              <textarea id="message" name="message" placeholder="Share your ideas, timings or any special requirements."></textarea>
+            </div>
+          </div>
+
+          <button class="btn form-submit" type="submit">Prepare Email Enquiry
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <p class="form-disclaimer">This form opens your email application with your enquiry details filled in. Your email is not sent until you review and send it.</p>
+          <p id="formStatus" class="small-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-mark">S</span>
+            <span class="brand-name">
+              <strong>Henna Art</strong>
+              <span>by Sadia Amjid</span>
+            </span>
+          </a>
+          <p>Henna artistry for bridal occasions, private appointments and celebrations in Dubai. Get in touch to discuss your next event.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#services">Our Services</a>
+            <a href="#about">Our Story</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#experience">How It Works</a>
+            <a href="#faq">FAQs</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <div class="footer-links">
+            <a href="tel:+971508515054">+971 50 851 5054</a>
+            <a href="mailto:hennaartbysadiaamjid@gmail.com">hennaartbysadiaamjid@gmail.com</a>
+            <a href="https://www.hennaartbysadiaamjid.com/contact-us/" target="_blank" rel="noopener noreferrer">Business contact page</a>
+            <a href="https://www.hennaartbysadiaamjid.com/booking/" target="_blank" rel="noopener noreferrer">Existing booking page</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Henna Art by Sadia Amjid. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/hennaartbysadiaamjid/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile action bar: two functional actions only -->
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a class="btn btn-outline" href="tel:+971508515054">Call Now</a>
+    <a class="btn" href="#booking">Enquire Now</a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const isOpen = item.classList.toggle("open");
+        button.setAttribute("aria-expanded", String(isOpen));
+      });
+    });
+
+    // Set the current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Prevent selecting a date in the past
+    const eventDate = document.getElementById("eventDate");
+    const today = new Date();
+    const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+      .toISOString().split("T")[0];
+    eventDate.min = localToday;
+
+    // Prepare an email enquiry. This does not claim to submit to a server.
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!this.reportValidity()) return;
+
+      const data = new FormData(this);
+      const subject = "Henna Enquiry - " + (data.get("event") || "New Enquiry");
+
+      const body = [
+        "Hello Henna Art by Sadia Amjid,",
+        "",
+        "I would like to enquire about a henna service.",
+        "",
+        "Name: " + (data.get("name") || ""),
+        "Email: " + (data.get("email") || ""),
+        "Phone: " + (data.get("phone") || ""),
+        "Occasion: " + (data.get("event") || ""),
+        "Preferred date: " + (data.get("date") || "Not specified"),
+        "Number of guests: " + (data.get("guests") || "Not specified"),
+        "Location: " + (data.get("location") || "Not specified"),
+        "Preferred style/service: " + (data.get("style") || "Not specified"),
+        "",
+        "Additional details:",
+        data.get("message") || "None provided",
+        "",
+        "Please let me know about availability and pricing.",
+        "",
+        "Thank you."
+      ].join("\n");
+
+      const mailto = "mailto:hennaartbysadiaamjid@gmail.com"
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+
+      document.getElementById("formStatus").textContent =
+        "Your email application should open with the enquiry prepared. Please review and send it.";
+
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
